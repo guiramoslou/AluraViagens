@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		780E652B2602346400FA5F84 /* Viagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E652A2602346400FA5F84 /* Viagem.swift */; };
+		780E6535260237F200FA5F84 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E6534260237F200FA5F84 /* TableViewCell.swift */; };
+		783E2C70260249910023B8F0 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 783E2C6F260249910023B8F0 /* Assets */; };
 		789B70D725FBD8890066FB59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789B70D625FBD8890066FB59 /* AppDelegate.swift */; };
 		789B70D925FBD8890066FB59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789B70D825FBD8890066FB59 /* SceneDelegate.swift */; };
 		789B70DB25FBD8890066FB59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789B70DA25FBD8890066FB59 /* ViewController.swift */; };
 		789B70DE25FBD8890066FB59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789B70DC25FBD8890066FB59 /* Main.storyboard */; };
 		789B70E025FBD88B0066FB59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 789B70DF25FBD88B0066FB59 /* Assets.xcassets */; };
 		789B70E325FBD88B0066FB59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789B70E125FBD88B0066FB59 /* LaunchScreen.storyboard */; };
+		78BF2BDF260246BC0015913B /* ViagemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BF2BDE260246BC0015913B /* ViagemDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		780E652A2602346400FA5F84 /* Viagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viagem.swift; sourceTree = "<group>"; };
+		780E6534260237F200FA5F84 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		783E2C6F260249910023B8F0 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Assets; path = "/Users/guilherme.lourenco/Desktop/Alura Viagens/Alura Viagens/Assets"; sourceTree = "<absolute>"; };
 		789B70D325FBD8890066FB59 /* Alura Viagens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alura Viagens.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		789B70D625FBD8890066FB59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		789B70D825FBD8890066FB59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,7 @@
 		789B70DF25FBD88B0066FB59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		789B70E225FBD88B0066FB59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		789B70E425FBD88B0066FB59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78BF2BDE260246BC0015913B /* ViagemDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViagemDAO.swift; path = "../../../Downloads/Arquivos Projeto/ViagemDAO.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		788EED3D26024492009DE1E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				780E652A2602346400FA5F84 /* Viagem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		788EED3E260244B4009DE1E3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				788EED40260244E7009DE1E3 /* View */,
+				788EED3F260244E0009DE1E3 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		788EED3F260244E0009DE1E3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				789B70DA25FBD8890066FB59 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		788EED40260244E7009DE1E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				780E6534260237F200FA5F84 /* TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		789B70CA25FBD8890066FB59 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +97,16 @@
 		789B70D525FBD8890066FB59 /* Alura Viagens */ = {
 			isa = PBXGroup;
 			children = (
+				783E2C6F260249910023B8F0 /* Assets */,
+				78BF2BDE260246BC0015913B /* ViagemDAO.swift */,
+				788EED3E260244B4009DE1E3 /* Home */,
+				788EED3D26024492009DE1E3 /* Model */,
+				789B70E425FBD88B0066FB59 /* Info.plist */,
 				789B70D625FBD8890066FB59 /* AppDelegate.swift */,
 				789B70D825FBD8890066FB59 /* SceneDelegate.swift */,
-				789B70DA25FBD8890066FB59 /* ViewController.swift */,
-				789B70DC25FBD8890066FB59 /* Main.storyboard */,
 				789B70DF25FBD88B0066FB59 /* Assets.xcassets */,
 				789B70E125FBD88B0066FB59 /* LaunchScreen.storyboard */,
-				789B70E425FBD88B0066FB59 /* Info.plist */,
+				789B70DC25FBD8890066FB59 /* Main.storyboard */,
 			);
 			path = "Alura Viagens";
 			sourceTree = "<group>";
@@ -125,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				789B70E325FBD88B0066FB59 /* LaunchScreen.storyboard in Resources */,
+				783E2C70260249910023B8F0 /* Assets in Resources */,
 				789B70E025FBD88B0066FB59 /* Assets.xcassets in Resources */,
 				789B70DE25FBD8890066FB59 /* Main.storyboard in Resources */,
 			);
@@ -137,7 +182,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				780E652B2602346400FA5F84 /* Viagem.swift in Sources */,
 				789B70DB25FBD8890066FB59 /* ViewController.swift in Sources */,
+				780E6535260237F200FA5F84 /* TableViewCell.swift in Sources */,
+				78BF2BDF260246BC0015913B /* ViagemDAO.swift in Sources */,
 				789B70D725FBD8890066FB59 /* AppDelegate.swift in Sources */,
 				789B70D925FBD8890066FB59 /* SceneDelegate.swift in Sources */,
 			);
