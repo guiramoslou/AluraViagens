@@ -262,6 +262,14 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T27-De-Sfv">
+                                <rect key="frame" x="-150" y="0.0" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="voltar"/>
+                                <connections>
+                                    <action selector="botaoVoltar:" destination="a5c-dS-Bw9" eventType="touchUpInside" id="gbU-Oo-lkp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DWX-Hs-Ud7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -272,6 +280,13 @@
                             <constraint firstItem="17j-D7-hwC" firstAttribute="trailing" secondItem="DWX-Hs-Ud7" secondAttribute="trailing" id="qFd-Tn-FBS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imagemPacoteViagem" destination="Wbx-cF-lqs" id="Inn-rG-Wl8"/>
+                        <outlet property="labelDataViagem" destination="ymC-j2-bzS" id="goO-1I-iPL"/>
+                        <outlet property="labelDescricaoPacoteViagem" destination="oAr-9f-kjI" id="No4-f7-Gxu"/>
+                        <outlet property="labelPrecoPacoteViagem" destination="E2M-UO-dEf" id="tnd-CQ-CNd"/>
+                        <outlet property="labelTituloPacoteViagem" destination="3CQ-92-Zvx" id="ORf-2C-zQ1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z4i-LR-0j7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
