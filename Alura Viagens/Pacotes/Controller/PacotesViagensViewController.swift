@@ -60,6 +60,7 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard?.instantiateViewController(identifier: "detalhes") as! DetalhesViagemViewController
         controller.pacoteSelecionado = pacote
+        controller.modalPresentationStyle = .fullScreen
         self.present(controller, animated: true, completion: nil)
     }
     
