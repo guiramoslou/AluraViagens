@@ -61,7 +61,7 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
         let controller = storyboard?.instantiateViewController(identifier: "detalhes") as! DetalhesViagemViewController
         controller.pacoteSelecionado = pacote
         controller.modalPresentationStyle = .fullScreen
-        self.present(controller, animated: true, completion: nil)
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {

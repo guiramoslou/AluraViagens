@@ -24,10 +24,12 @@ class DetalhesViagemViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(aumentarScroll(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         if let pacote = pacoteSelecionado{
             self.imagemPacoteViagem.image = UIImage(named: pacote.viagem.caminhoDaImagem)
-            self.labelTituloPacoteViagem.text = pacote.viagem.titulo
+            self.labelTituloPacoteViagem.text = pacote.viagem.titulo.uppercased()
             self.labelDescricaoPacoteViagem.text = pacote.descricao
             self.labelDataViagem.text = pacote.dataViagem
             self.labelPrecoPacoteViagem.text = pacote.viagem.preco
+            
+            
         }
     }
     
@@ -52,4 +54,10 @@ class DetalhesViagemViewController: UIViewController {
         datePickerView.addTarget(self, action: #selector(exibeDataTextField(sender:)), for: .valueChanged)
     }
     
+    @IBAction func botaoFinalizarCompra(_ sender: UIButton) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyBoard.instantiateViewController(withIdentifier: "confirmacaoPagamento") as! ConfirmacaoPagamentoViewController
+        controller.pacoteComprado = pacoteSelecionado
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
 }
