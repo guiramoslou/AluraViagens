@@ -36,14 +36,7 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
         
         let pacoteAtual = listaViagens[indexPath.item]
         
-        celulaPacote.labelTitulo.text = pacoteAtual.viagem.titulo
-        celulaPacote.labelQuantidadeDeDias.text = "\(pacoteAtual.viagem.quantidadeDeDias) dias"
-        celulaPacote.labelPreco.text = pacoteAtual.viagem.preco
-        celulaPacote.imagemViagem.image = UIImage(named: pacoteAtual.viagem.caminhoDaImagem)
-        
-        celulaPacote.layer.borderWidth = 0.5
-        celulaPacote.layer.borderColor = CGColor(red: 85.0/255.0, green: 85.0/255.0, blue: 85.0/255.0, alpha: 1)
-        celulaPacote.layer.cornerRadius = 8
+        celulaPacote.configuraCelulaPacote(pacote: pacoteAtual)
         
         return celulaPacote
     }
@@ -60,7 +53,6 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard?.instantiateViewController(identifier: "detalhes") as! DetalhesViagemViewController
         controller.pacoteSelecionado = pacote
-        controller.modalPresentationStyle = .fullScreen
         self.navigationController?.pushViewController(controller, animated: true)
     }
     

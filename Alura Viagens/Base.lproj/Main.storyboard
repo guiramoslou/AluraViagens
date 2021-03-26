@@ -326,7 +326,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="botaoFinalizarCompra:" destination="a5c-dS-Bw9" eventType="touchUpInside" id="wni-6l-S7v"/>
+                                                            <action selector="botaoFinalizarCompra:" destination="a5c-dS-Bw9" eventType="touchUpInside" id="nhh-j3-xei"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
